@@ -130,3 +130,73 @@ body {
   .main-features { grid-template-columns: 1fr; margin: 20px 5%; }
   .category-list { gap: 12px; }
 }
+
+/* Grocery and jewelry category pages */
+.page-banner {
+  margin: 22px 4% 0;
+  padding: 28px 20px;
+  text-align: center;
+  background: #e8eee5;
+  border: 1px solid #aab7a7;
+}
+.page-banner h2 {
+  margin: 0 0 6px;
+  color: #315b3d;
+  font-size: 29px;
+}
+.page-banner p { margin: 0; }
+
+.page-intro {
+  max-width: 850px;
+  margin: 25px auto;
+  padding: 0 22px;
+  text-align: center;
+}
+.page-intro h2 {
+  color: #315b3d;
+  margin-bottom: 8px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin: 25px 6%;
+}
+.product-card {
+  background: #fff;
+  border: 1px solid #aaa;
+  padding: 14px;
+  text-align: center;
+}
+.product-photo {
+  min-height: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8e4da;
+  border: 1px dashed #aaa;
+  color: #666;
+}
+.product-card h3 {
+  color: #315b3d;
+  margin: 14px 0 6px;
+}
+.product-card p { margin: 0 2px 8px; }
+
+.page-note {
+  margin: 28px 6% 35px;
+  padding: 20px 25px;
+  background: #fff;
+  border: 1px solid #aaa;
+  text-align: center;
+}
+.page-note h2 {
+  color: #315b3d;
+  margin-top: 0;
+}
+
+@media (max-width: 700px) {
+  .product-grid { grid-template-columns: 1fr; margin: 20px 5%; }
+  .page-banner h2 { font-size: 24px; }
+}
